@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-  <title>Kosztolányi Ákos</title>
+  <title>Lajkó Gergő</title>
 </head>
 
 <body class="container-fluid">
@@ -29,7 +29,9 @@
           <li class="nav-item">
             <a class="nav-link" href="admin.html">Admin</a>
           </li>
-          
+          <li class="nav-item">
+            <a class="nav-link" href="ujadat.html">Új adat</a>
+          </li>
         </ul>
       </div>
     </nav>
@@ -43,91 +45,62 @@
       <input type="range" class="form-range">
     </aside>
     <article class="col-md-6 row bg-light">
-      <h2>Mérettáblázatok:</h2>
-      <p>Férfi méretek:</p>
-      <table class="table table-hover">
-        <thead>
-          <tr>
-            <th>Méretek</th>
-            <th>Min. magasság</th>
-            <th>Max. magasság</th>
-            <th>Min. súly(kg)</th>
-            <th>Max. súly(kg)</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>S</td>
-            <td>162cm</td>
-            <td>175cm</td>
-            <td>62</td>
-            <td>70</td>
-          </tr>
-          <tr>
-            <td>M</td>
-            <td>170cm</td>
-            <td>182cm</td>
-            <td>68</td>
-            <td>78</td>
-          </tr>
-          <tr>
-            <td>L</td>
-            <td>178cm</td>
-            <td>188cm</td>
-            <td>78</td>
-            <td>85</td>
-          </tr>
-          <tr>
-            <td>XL</td>
-            <td>187cm</td>
-            <td>197cm</td>
-            <td>85</td>
-            <td>92</td>
-          </tr>
-        </tbody>
-      </table>
-      <p>Női méretek:</p>
-      <table class="table table-hover">
-        <thead>
-          <tr>
-            <th>Méretek</th>
-            <th>Min. magasság</th>
-            <th>Max. magasság</th>
-            <th>Min. súly(kg)</th>
-            <th>Max. súly(kg)</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>S</td>
-            <td>152cm</td>
-            <td>163cm</td>
-            <td>48</td>
-            <td>55</td>
-          </tr>
-          <tr>
-            <td>M</td>
-            <td>163cm</td>
-            <td>172cm</td>
-            <td>54</td>
-            <td>63</td>
-          </tr>
-          <tr>
-            <td>L</td>
-            <td>172cm</td>
-            <td>180cm</td>
-            <td>62</td>
-            <td>72</td>
-          </tr>
-          <tr>
-            <td>XL</td>
-            <td>179cm</td>
-            <td>187cm</td>
-            <td>70</td>
-            <td>78</td>
-          </tr>
-        </tbody>
-      </table>
+      <h2>Új adat felvitele:</h2>
+      
+      <form action="/action_page.php">
+        <div class="mb-3 mt-3">
+          <label for="email" class="form-label">Póló címe:</label>
+          <input type="text" class="form-control" placeholder="Póló neve...">
+        </div>
+
+        <div class="mb-3 mt-3">
+        <form action="/action_page.php">
+          <label for="email" class="form-label">Kép feltöltése:</label><br>
+          <input type="file" id="myFile" name="filename">
+        </form>
+        </div>
+
+        <div class="mb-3 mt-3">
+          <label for="comment">Póló leirás:</label>
+          <textarea class="form-control" rows="5" id="comment" name="text" placeholder="Póló leírás..."></textarea> 
+        </div>
+
+        <div class="mb-3 mt-3">
+          <label for="email" class="form-label">Ár:</label>
+          <input type="email" class="form-control" id="email" placeholder="1500Ft" name="number">
+        </div>
+
+        <div class="mb-3">
+          <label for="pwd" class="form-label">Méret felvitele:</label>
+          <div class="form-check">  
+            <input class="form-check-input" type="checkbox" id="check1" name="option1" value="something" checked>
+            <label class="form-check-label">S</label>
+          </div> 
+          <div class="form-check">  
+            <input class="form-check-input" type="checkbox" id="check1" name="option1" value="something" checked>
+            <label class="form-check-label">M</label>
+          </div> 
+          <div class="form-check">  
+            <input class="form-check-input" type="checkbox" id="check1" name="option1" value="something" checked>
+            <label class="form-check-label">L</label>
+          </div> 
+          <div class="form-check">  
+            <input class="form-check-input" type="checkbox" id="check1" name="option1" value="something" checked>
+            <label class="form-check-label">XL</label>
+          </div> 
+          <div class="form-check">  
+            <input class="form-check-input" type="checkbox" id="check1" name="option1" value="something" checked>
+            <label class="form-check-label">XXL</label>
+          </div> 
+        </div>
+
+        
+        
+  
+
+        <button type="submit" class="btn btn-primary">Rögzités</button>
+      </form> 
+
     </article>
     <aside class="col-md-3 bg-light">
       <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquid, mollitia doloremque ipsum earum quod aut,
