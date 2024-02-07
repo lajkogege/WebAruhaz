@@ -14,7 +14,7 @@
     <header class="col-md-12 bg-light">
       <h1>Webáruház</h1>
     </header>
-    <nav class="navbar navbar-expand-sm bg-light">
+    <nav class="col-md-12 navbar navbar-expand-sm bg-light">
       <div class="container-fluid">
         <ul class="navbar-nav">
           <li class="nav-item">
@@ -26,103 +26,107 @@
           <li class="nav-item">
             <a class="nav-link" href="meret_tabla.html">Mérettáblázat</a>
           </li>
+          <li class="nav-item">
+            <a class="nav-link" href="velemeny.html">Vélemény</a>
+          </li>
         </ul>
       </div>
     </nav>
     <aside class="col-md-3 bg-light">
+      <p>Termék neve:</p>
       <div class="input-group mb-3">
         <input type="text" class="form-control" placeholder="Keresés">
         <button class="btn btn-primary" type="submit">Keresés</button>
       </div>
+      <label for="customRange" class="form-label">Szűrés ár szerint</label>
+      <input type="range" class="form-range">
     </aside>
     <article class="col-md-6 row bg-light">
-      <div class="container mt-3">
-        <h2>Mérettáblázatok:</h2>
-        <p>Férfi méretek:</p>
-        <table class="table table-hover">
-          <thead>
-            <tr>
-              <th>Méretek</th>
-              <th>Min. magasság</th>
-              <th>Max. magasság</th>
-              <th>Min. súly(kg)</th>
-              <th>Max. súly(kg)</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>S</td>
-              <td>162cm</td>
-              <td>175cm</td>
-              <td>62</td>
-              <td>70</td>
-            </tr>
-            <tr>
-              <td>M</td>
-              <td>170cm</td>
-              <td>182cm</td>
-              <td>68</td>
-              <td>78</td>
-            </tr>
-            <tr>
-              <td>L</td>
-              <td>178cm</td>
-              <td>188cm</td>
-              <td>78</td>
-              <td>85</td>
-            </tr>
-            <tr>
-              <td>XL</td>
-              <td>187cm</td>
-              <td>197cm</td>
-              <td>85</td>
-              <td>92</td>
-            </tr>
-          </tbody>
-        </table>
-        <p>Női méretek:</p>
-        <table class="table table-hover">
-          <thead>
-            <tr>
-              <th>Méretek</th>
-              <th>Min. magasság</th>
-              <th>Max. magasság</th>
-              <th>Min. súly(kg)</th>
-              <th>Max. súly(kg)</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>S</td>
-              <td>152cm</td>
-              <td>163cm</td>
-              <td>48</td>
-              <td>55</td>
-            </tr>
-            <tr>
-              <td>M</td>
-              <td>163cm</td>
-              <td>172cm</td>
-              <td>54</td>
-              <td>63</td>
-            </tr>
-            <tr>
-              <td>L</td>
-              <td>172cm</td>
-              <td>180cm</td>
-              <td>62</td>
-              <td>72</td>
-            </tr>
-            <tr>
-              <td>XL</td>
-              <td>179cm</td>
-              <td>187cm</td>
-              <td>70</td>
-              <td>78</td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
+      <h2>Mérettáblázatok:</h2>
+      <p>Férfi méretek:</p>
+      <table class="table table-hover">
+        <thead>
+          <tr>
+            <th>Méretek</th>
+            <th>Min. magasság</th>
+            <th>Max. magasság</th>
+            <th>Min. súly(kg)</th>
+            <th>Max. súly(kg)</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>S</td>
+            <td>162cm</td>
+            <td>175cm</td>
+            <td>62</td>
+            <td>70</td>
+          </tr>
+          <tr>
+            <td>M</td>
+            <td>170cm</td>
+            <td>182cm</td>
+            <td>68</td>
+            <td>78</td>
+          </tr>
+          <tr>
+            <td>L</td>
+            <td>178cm</td>
+            <td>188cm</td>
+            <td>78</td>
+            <td>85</td>
+          </tr>
+          <tr>
+            <td>XL</td>
+            <td>187cm</td>
+            <td>197cm</td>
+            <td>85</td>
+            <td>92</td>
+          </tr>
+        </tbody>
+      </table>
+      <p>Női méretek:</p>
+      <table class="table table-hover">
+        <thead>
+          <tr>
+            <th>Méretek</th>
+            <th>Min. magasság</th>
+            <th>Max. magasság</th>
+            <th>Min. súly(kg)</th>
+            <th>Max. súly(kg)</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>S</td>
+            <td>152cm</td>
+            <td>163cm</td>
+            <td>48</td>
+            <td>55</td>
+          </tr>
+          <tr>
+            <td>M</td>
+            <td>163cm</td>
+            <td>172cm</td>
+            <td>54</td>
+            <td>63</td>
+          </tr>
+          <tr>
+            <td>L</td>
+            <td>172cm</td>
+            <td>180cm</td>
+            <td>62</td>
+            <td>72</td>
+          </tr>
+          <tr>
+            <td>XL</td>
+            <td>179cm</td>
+            <td>187cm</td>
+            <td>70</td>
+            <td>78</td>
+          </tr>
+        </tbody>
+      </table>
     </article>
     <aside class="col-md-3 bg-light">
       <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquid, mollitia doloremque ipsum earum quod aut,
